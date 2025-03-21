@@ -1,0 +1,121 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #324950;
+    background-color: #E5E5E5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+}
+
+.border-bottom {
+    border-bottom: var(--custom-border-width) var(--custom-border-style) var(--custom-border-color) !important;
+    border-bottom-color: #324950 !important;
+}
+
+.hero {
+    background: url('../images/home-bg.png') center/cover no-repeat;
+    height: 640px;
+    margin-top: -200px;
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    color: #735440;
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.btn-green {
+    background-color: #57984C;
+    color: #FFFFFF;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.row {
+    margin-left: calc(-1 * var(--custom-gutter-x));
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+.green-bar {
+    width: 47px;
+    height: 6px;
+    background-color: #57984C;
+}
+
+.play-button {
+    position: absolute;
+    top: 47%;
+    left: 51%;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 24px 24px rgba(0, 0, 0, 0.35);
+}
+
+.play-button i {
+    font-size: 32px;
+    color: #57984C;
+}
+
+.separator {
+    width: 183px;
+    height: 1px;
+    background-color: #324950;
+    margin: 0 auto;
+}
+
+.card-title {
+    color: #57984C;
+    font-weight: bold;
+}
+
+.main-activities.py-5.bg-light {
+    background-color: #EDEDED;
+}
+
+.text-center.display-4.mb-5 {
+    font-weight: bold;
+}
+
+footer .list-inline-item:not(:last-child) {
+    margin-right: 1rem;
+}
+
+footer .list-inline-item a {
+    text-decoration: none;
+}
+
+.bg-dark {
+    background-color: #2D3F45 !important;
+}
+
+.bg-secondary {
+    background-color: #324950 !important;
+}
