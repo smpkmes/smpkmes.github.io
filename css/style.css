@@ -826,6 +826,7 @@ input[type="submit"] {
     max-width: 1100px;
     margin: 0 auto 20px;
     text-align: left;
+    color: green;
   }
 
   header.contactus {
