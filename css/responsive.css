@@ -1,205 +1,298 @@
-html, body {
-    overflow-x: hidden;
-    width: 100%;
-  }
+/* ================ Общие стили ================ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #324950;
+  background-color: #E5E5E5;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Утилитарные классы */
+.border-bottom {
+  border-bottom: var(--custom-border-width) var(--custom-border-style) var(--custom-border-color) !important;
+  border-bottom-color: #324950 !important;
+}
+
+/* ================ Адаптивные стили для экрана <= 1024px ================ */
 @media (max-width: 1024px) {
   .content > div {
-    flex-direction: column !important;
-    text-align: center;
+      flex-direction: column !important;
+      text-align: center;
   }
 
   .contentimg {
-    width: 100%;
-    height: auto;
+      width: 100%;
+      height: auto;
   }
 
   .search {
-    width: 250px;
+      width: 250px;
   }
 
   .searchlinks {
-    display: none;
+      display: none;
   }
 
   .menu-toggle {
-    display: block;
+      display: block;
   }
 
   .menu-checkbox:checked + .menu-toggle + .mobile-menu {
-    display: flex;
+      display: flex;
   }
 }
 
+/* ================ Адаптивные стили для экрана <= 768px ================ */
 @media (max-width: 768px) {
   .search {
-    width: 200px;
+      width: 200px;
   }
 
   .headerimage {
-    width: 100px;
+      width: 100px;
   }
 
   .searchlinks {
-    display: none;
+      display: none;
   }
 
   .menu-toggle {
-    display: block;
+      display: block;
   }
 
   .footermenu {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 15px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 15px;
   }
 
   .footermenu ul {
-    flex-direction: column;
-    gap: 10px;
+      flex-direction: column;
+      gap: 10px;
   }
 
   .footermenu li {
-    display: block;
+      display: block;
   }
 
   .footerimages {
-    position: static;
-    margin-top: 10px;
+      position: static;
+      margin-top: 10px;
   }
 
   .addresslayout {
-    flex-direction: column;
-    align-items: center;
+      flex-direction: column;
+      align-items: center;
   }
 
   .addresscontent {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
   }
 
   .addresscolumnleft,
   .addresscolumnright {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 15px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 15px;
   }
 
   .inputgroup {
-    width: 100%;
+      width: 100%;
   }
 
   .columnswrapper {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
   }
 
   .textbox, .imagebox {
-    width: 100%; 
-    text-align: center; 
-    margin-bottom: 20px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
   }
 
   .addtocart {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
   }
 
   .highlightbox img {
-    max-width: 100%;
-    height: auto;
+      max-width: 100%;
+      height: auto;
   }
 
   .backlink {
-    display: inline-block;
-    margin-bottom: 20px;
-    font-size: 14px;
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 14px;
   }
 
   .tomatocontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
   }
 
   .tomatocolumn {
-    width: 100%;
-    margin-bottom: 20px;
-    text-align: center; 
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
   }
 
   .card {
-    width: 100%;
-    margin-bottom: 20px;
+      width: 100%;
+      margin-bottom: 20px;
   }
 
   .card img {
-    width: 100%;
-    height: auto;
+      width: 100%;
+      height: auto;
   }
 
   .image-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
 
   .tomatosection h1, .tomatosection h2, .tomatosection p {
-    text-align: center;
-    margin: 10px 0;
+      text-align: center;
+      margin: 10px 0;
   }
 
   .highlightedtext {
-    padding: 0 20px;
+      padding: 0 20px;
   }
 
   .highlightedtext p {
-    margin-bottom: 20px;
+      margin-bottom: 20px;
   }
 }
 
+/* ================ Адаптивные стили для экрана <= 640px ================ */
 @media (max-width: 640px) {
   .content h1 {
-    font-size: 48px;
+      font-size: 48px;
   }
 
   .activities h1 {
-    font-size: 48px;
+      font-size: 48px;
   }
 
   .search {
-    display: none;
+      display: none;
   }
 
   .mobile-menu {
-    display: flex;
+      display: flex;
   }
 }
 
+/* ================ Адаптивные стили для экрана <= 480px ================ */
 @media (max-width: 480px) {
   .headerimage {
-    width: 80px;
+      width: 80px;
   }
 
   .content h1 {
-    font-size: 36px;
+      font-size: 36px;
   }
 }
 
+/* ================ Адаптивные стили для экрана <= 400px ================ */
 @media (max-width: 400px) {
   .content h1 {
-    font-size: 32px;
+      font-size: 32px;
   }
 }
 
+/* ================ Адаптивные стили для экрана <= 320px ================ */
 @media (max-width: 320px) {
   .content h1 {
-    font-size: 28px;
+      font-size: 28px;
+  }
+}
+
+/* ===================== Стили для контейнеров и сеток ===================== */
+@media (max-width: 1024px) {
+  .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .content > div {
+      max-width: 90%;
+  }
+
+  .content img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .row {
+      flex-wrap: wrap;
+  }
+
+  .py-5 {
+      padding-top: 1.5rem !important;
+      padding-bottom: 1.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .content > div {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .card {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .btn-green {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+
+  .hero-text h1 {
+      font-size: 36px;
+  }
+
+  .hero {
+      height: 500px;
+  }
+
+  .card img {
+      height: auto;
+  }
+
+  .main-activities.py-5.bg-light {
+      padding: 20px;
+  }
+
+  .mobile-menu {
+      display: flex;
+  }
+
+  .search {
+      width: 100%;
   }
 }
