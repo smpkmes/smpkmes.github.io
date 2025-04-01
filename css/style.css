@@ -508,3 +508,339 @@ header.tomatoall {
     justify-content: center;
     margin-bottom: 25px;
 }
+
+/* ================ Стили для tomatoone.html ================ */
+body.tomatoone {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body.tomatoone header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #3a5c61;
+  }
+  
+  body.tomatoone .headergridmenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 50px 0;
+  }
+  
+  body.tomatoone .search {
+    position: absolute;
+    top: 20px;
+    right: 120px;
+    display: flex;
+    border-bottom: 1px solid #324950;
+    width: 300px;
+    background-color: transparent;
+  }
+  
+  body.tomatoone .searchinput {
+    border: 0;
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    background: transparent;
+  }
+  
+  body.tomatoone .searchbtn {
+    background: transparent;
+    border: 0;
+    padding: 5px;
+  }
+  
+  body.tomatoone .searchlinks {
+    position: absolute;
+    top: 70px;
+    right: 120px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  body.tomatoone .searchlinks a {
+    color: #324950;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  body.tomatoone .wrapper {
+    background-color: #f7f7f7;
+    margin-top: 5%;
+  }
+
+  body.tomatoone .columnssection {
+    display: flex;
+    flex-wrap: wrap;
+    background: url('../images/union2.png') no-repeat center center/cover;
+    justify-content: center;
+  }
+  
+  body.tomatoone .columnswrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+    gap: 30px;
+  }
+  
+  body.tomatoone .textbox,
+  body.tomatoone .imagebox {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    margin-top: 2%;
+  }
+  
+  body.tomatoone .imagebox img {
+    width: 530px;
+    height: auto;
+    display: block;
+    margin-top: 8%;
+  }
+  
+  body.tomatoone .addtocart {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  body.tomatoone .addtocart img {
+    width: 250px;
+    height: auto;
+  }
+  
+  body.tomatoone hr {
+    background-color: #57984C;
+    height: 1px;
+    border: none;
+    width: 40%;
+    margin-left: 0;
+  }
+  
+  body.tomatoone ul li::marker {
+    color: #57984C;
+  }
+  
+  body.tomatoone .highlighticon {
+    width: 50%;
+    height: auto;
+    margin-right: 5%;
+  }
+  
+  body.tomatoone .backlink {
+    color: #57984C;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+body.tomatoone h1 {
+    color: #324950;
+    font-size: 2.5em;
+}
+
+body.tomatoone h2 {
+    color: green;
+    font-size: 2em;
+}
+
+body.tomatoone h3 {
+    color: green; 
+    font-size: 1.8em; 
+}
+
+body.tomatoone h3:nth-of-type(6) {
+    color: black; 
+}
+
+body.tomatoone .address {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  body.tomatoone .footer {
+    background-color: #324950;
+    color: #B9B9B9;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  body.tomatoone .footermenu {
+    display: flex;
+    background-color: #2D3F45;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  body.tomatoone .footermenu ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  body.tomatoone .footermenu li {
+    display: inline;
+  }
+  
+  body.tomatoone .footermenu a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  
+input[type="submit"] {
+    width: 200px;
+    height: 50px; 
+    background-color: #57984C;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .menu-checkbox {
+    display: none;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .mobile-menu a {
+    padding: 10px;
+    text-decoration: none;
+    color: #324950;
+    display: block;
+  }
+  
+  .contactus{
+    background-color: #F7F7F7;
+  }
+  
+  .formgroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .formgroup label {
+    color: #324950;
+    margin-bottom: 5px;
+  }
+  
+  .contactform {
+    background-color: #f7f7f7;
+    padding: 20px;
+  }
+  
+  .contactform h1 {
+    color: #324950;
+    font-size: 44px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .addresslayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .addresscontent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1100px;
+    width: 100%;
+    gap: 30px;
+  }
+  
+  .addresscolumnleft,
+  .addresscolumnright {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    margin-top: 2%;
+  }
+  
+  .inputgroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    color: #324950;
+  }
+  
+  input, select, textarea {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .addressheader {
+    max-width: 1100px;
+    margin: 0 auto 20px;
+    text-align: left;
+  }
+
+  header.contactus {
+    background: url('../images/bgcontactus.png') no-repeat center;
+    background-size: contain;
+    margin-top: 60px;
+    height: 350px;
+    padding-top: 100px;
+  }
+
+  .address {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
