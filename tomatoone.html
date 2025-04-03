@@ -45,7 +45,7 @@
       <div class="columnssection">
           <div class="columnswrapper">
               <div class="textbox">
-                  <a href="tomatoall2.html" class="backlink">← Return to all potatos</a>
+                  <a href="tomatoall2.html" class="backlink">← Return to all cucumbers</a>
                   <h1>{{ product.title }}</h1>
                   <h2>{{ product.short_text }}</h2>
                   <h3>×××××</h3>
@@ -75,8 +75,11 @@
               <div class="imagebox">
                 <img :src="product.image" :alt="product.title">
                 <div class="addtocart">
-                <a href="#">
-                <img src="images/pdf-icon.svg">
+                  <a href="#" @click.prevent="addToCart(product.id)" v-if="!btnVisible">
+                    <img src="images/addto.png">
+                </a>
+                <a href="contactus.html" v-if="btnVisible">
+                    <img src="images/goto.png">
                 </a>
               </div>
               <h3>Cycle</h3>

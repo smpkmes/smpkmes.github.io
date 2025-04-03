@@ -104,5 +104,39 @@ var app = new Vue({
                 this.product = this.products.find(p => p.id === productId) || {}; 
             }
         }
+    }, 
+    mounted: function() { 
+        this.getProduct();
+        this.checkInCart();
+    }, 
+    methods: { 
+        addToCart: function(id) { 
+            var cart = [];
+            if (window.localStorage.getItem('cart')) {
+                cart = window.localStorage.getItem('cart').split(',');
+            }
+
+            if (cart.indexOf(String(id)) === -1) {
+                cart.push(id);
+                window.localStorage.setItem('cart', cart.join(','));
+                this.btnVisible = 1; 
+            }
+        },
+        getProduct: function() {
+            if (window.location.hash) {
+                var id = window.location.hash.replace('#', '');
+                if (this.products.length > 0) {
+                    for (let i in this.products) {
+                        if (this.products[i].id == id) {
+                            this.product = this.products[i];
+                        }
+                    }
+                }
+            }
+        },
+        checkInCart: function() {
+            let cart = window.localStorage.getItem('cart') ? window.localStorage.getItem('cart').split(',') : [];
+            this.btnVisible = cart.includes(String(this.product.id)) ? 1 : 0;
+        }
     }
 });
